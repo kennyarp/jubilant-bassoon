@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Kybra</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #1e40af;
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e40af;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #1e40af;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #1e3a8a;
+    }
+
+    .whatsapp-box {
+      margin-top: 2rem;
+      background: #22c55e;
+      padding: 1.2rem;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .whatsapp-box a {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      background-color: #1e40af;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contactez Kybra</h1>
+  </header>
+
+  <main>
+    <h2>Formulaire de Contact</h2>
+    <p style="text-align:center;">
+      Des questions, une suggestion ou vous souhaitez proposer vos produits ? Envoyez-nous un message !
+    </p>
+
+    <form>
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="email" placeholder="votremail@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="whatsapp-box">
+      📱 Vous pouvez aussi nous contacter directement via WhatsApp au  
+      <strong>+509 3519 6415</strong><br><br>
+      <a href="https://wa.me/50935196415?text=Bonjour%2C%20je%20souhaite%20vous%20contacter%20concernant%20le%20site%20Kybra.%20">Cliquez ici pour discuter</a>
+    </div>
+  </main>
+
+  <div class="footer">
+    © 2025 Kybra. Tous droits réservés.
+  </div>
+
+</body>
+</html>
