@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenny Nexus - Boutique</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    header p {
+      font-size: 14px;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+      align-items: center;
+      color: white;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav input[type="text"] {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      width: 180px;
+    }
+    nav button {
+      background-color: #25d366;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      nav input[type="text"] {
+        width: 100px;
+      }
+      .menu-toggle {
+        display: inline;
+      }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product p {
+      margin: 5px 0;
+      color: #007b00;
+      font-weight: bold;
+    }
+
+    .product small {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .product a {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .warning {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 15px;
+      margin-top: 30px;
+      border-left: 5px solid #ffc107;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kenny Nexus</h1>
+  <p>Boutique en ligne - Commandez directement sur WhatsApp</p>
+</header>
+
+<nav>
+  <div class="logo">Kybra</div>
+  <input type="text" placeholder="Rechercher un produit..." />
+  <button onclick="window.location.href='https://wa.me/50935196415'">Contact</button>
+</nav>
+
+<div class="container">
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://i.imgur.com/GCnRSJR.jpg" alt="Casque Bluetooth">
+      <h3>Casque Bluetooth</h3>
+      <p>2 500 HTG</p>
+      <small>Son clair, design moderne, autonomie 12h</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20le%20Casque%20Bluetooth%20à%202500%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/B8z1BYk.jpg" alt="Chaussures Femme">
+      <h3>Chaussures Femme</h3>
+      <p>3 000 HTG</p>
+      <small>Confort & élégance, disponibles en plusieurs tailles</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20les%20Chaussures%20Femme%20à%203000%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/6RZ4AfX.jpg" alt="Montre Homme">
+      <h3>Montre Élégante</h3>
+      <p>1 800 HTG</p>
+      <small>Style classique, bracelet cuir, étanche</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20la%20Montre%20à%201800%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/r3huw9G.jpg" alt="Sac à main">
+      <h3>Sac à main</h3>
+      <p>2 200 HTG</p>
+      <small>Chic et pratique, intérieur doublé</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20le%20Sac%20à%20main%20à%202200%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/45J8LyJ.jpg" alt="T-shirt Streetwear">
+      <h3>T-shirt Streetwear</h3>
+      <p>1 000 HTG</p>
+      <small>Coupe oversize, 100% coton, plusieurs couleurs</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20le%20T-shirt%20à%201000%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+    <div class="product">
+      <img src="https://i.imgur.com/NZHHQmM.jpg" alt="Lunettes de soleil">
+      <h3>Lunettes de soleil</h3>
+      <p>850 HTG</p>
+      <small>Protection UV400, design tendance</small>
+      <a href="https://wa.me/50935196415?text=Bonjour,%20je%20souhaite%20commander%20les%20Lunettes%20de%20soleil%20à%20850%20HTG.">Commander sur WhatsApp</a>
+    </div>
+
+  </div>
+
+  <div class="warning">
+    📍 Livraison disponible uniquement à <strong>Carrefour</strong> pour le moment.  
+    📞 Pour tout renseignement ou ajout de produit en tant que vendeur, contactez-nous au <strong>+509 3519 6415</strong>.
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Kybra | Tous droits réservés. Site de démonstration. <br/>
+  Créé avec par Kenny.
+</footer>
+
+</body>
+  </html>
